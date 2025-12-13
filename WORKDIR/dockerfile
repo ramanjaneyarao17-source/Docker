@@ -4,3 +4,4 @@ RUN rm -rf /usr/share/nginx/html.index.html
 COPY index.html /usr/share/nginx/html.index
 WORKDIR /tmp
 COPY index.html /tmp/
+CMD [ "nginx", "-g", "daemon off;" ]
